@@ -1,0 +1,158 @@
+/* base.css for WDD 131 - Dynamic Web Fundamentals */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #1d4e89;
+  --secondary-color: #ffffff;
+  --accent1-color: #f7c59f;
+  --accent2-color: #2a9d8f;
+  --heading-font: 'Montserrat', sans-serif;
+  --paragraph-font: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 100%;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--accent1-color);
+  color: #333;
+  border-radius: 4px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+}
+
+.card h2 {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+.card h3 {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin: 1rem 0;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.card figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.card figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.card p {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav a {
+    margin: 0.25rem 0;
+  }
+} 
