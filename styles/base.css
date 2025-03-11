@@ -242,15 +242,31 @@ ul a:hover {
 /* Responsive styles */
 @media screen and (min-width: 768px) {
   main {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "title title"
+      "course-work sinaloa"
+      "certificate certificate";
+    gap: 1rem;
+  }
+  
+  main h1 {
+    grid-area: title;
+  }
+  
+  main section:nth-child(2) {
+    grid-area: course-work;
+  }
+  
+  main section:nth-child(3) {
+    grid-area: sinaloa;
   }
   
   .full-width {
-    grid-column: 1 / -1;
+    grid-area: certificate;
   }
 }
-
-/* Remove the two-column layout styles since we're not using them anymore */
 
 /* Hamburger menu for mobile */
 .hamburger {
@@ -311,8 +327,6 @@ ul a:hover {
     grid-template-columns: 1fr;
   }
 }
-
-/* Remove redundant styles */
 
 .page-title {
   font-size: 2rem;
