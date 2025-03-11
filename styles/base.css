@@ -239,29 +239,6 @@ ul a:hover {
   text-decoration: underline;
 }
 
-/* Two-column layout */
-.two-column-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.two-column-layout .card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.two-column-layout .card figure {
-  margin: 1rem auto;
-}
-
-.two-column-layout .card p {
-  margin: 0.5rem 0;
-  line-height: 1.5;
-}
-
 /* Responsive styles */
 @media screen and (min-width: 768px) {
   main {
@@ -271,17 +248,37 @@ ul a:hover {
   .full-width {
     grid-column: 1 / -1;
   }
-  
-  .two-column-layout {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
+}
+
+/* Remove the two-column layout styles since we're not using them anymore */
+
+/* Hamburger menu for mobile */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
   nav {
+    display: none;
+    width: 100%;
     flex-direction: column;
     align-items: center;
+  }
+  
+  nav.show {
+    display: flex;
   }
   
   nav a {
@@ -315,46 +312,12 @@ ul a:hover {
   }
 }
 
-/* Hamburger menu for mobile */
-.hamburger {
-  display: none;
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--secondary-color);
-}
+/* Remove redundant styles */
 
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
-  
-  nav {
-    display: none;
-    width: 100%;
-  }
-  
-  nav.show {
-    display: flex;
-  }
-}
-
-/* Make sure the cards in the two-column layout have equal height */
-.two-column-layout .card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.two-column-layout .card figure {
-  margin: 1rem auto;
-}
-
-.two-column-layout .card p {
-  margin: 0.5rem 0;
-  line-height: 1.5;
+.page-title {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  grid-column: 1 / -1;
+  color: var(--primary-color);
 } 
