@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Erik German</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Erik German - Personal website showcasing web development resources and information about Erik">
+    <title>WDD 231 - Erik German</title>
+    <meta name="description" content="WDD 231 - Erik German's personal website showcasing web development skills and course information">
     <meta name="author" content="Erik German">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - Erik German</h1>
-        <nav>
-            <a href="https://www.linkedin.com/in/erik-german/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-            <a href="final-project/">Final Project</a>
-        </nav>
+        <img src="images/erik-portrait.webp" alt="Erik German portrait">
+        <h1><span>Erik German</span></h1>
+        <button class="hamburger">☰</button>
     </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://github.com/eriko13">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/erik-german/">LinkedIn</a>
+    </nav>
     <main>
+        <h1>Home</h1>
+        
         <section class="card">
-            <h2>About Me</h2>
-            <p>My name is Erik. I was born in California, USA and live with my family in Sinaloa, Mexico. I am currently working as a software developer at Champs App, Inc. I have a one-year-old son and a beautiful wife. I love listening to music and I learning new things.</p>
-            <h3>Sinaloa, Mexico</h3>
-            <img src="images/erik-portrait.webp" alt="Portrait of Erik German" width="200">
-            <figure>
-                <img src="images/mexico-flag.webp" alt="Official Flag of Mexico" width="150">
-                <figcaption>Official Flag of Mexico</figcaption>
-            </figure>
-            <p>Mexico is the 14th largest country in the world by land area and is located in North America. It is home to 131 million people. The country is best known for its tequila, mariachi music, and tacos.</p>
-        </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
+            <h2>Course Work</h2>
             <ul>
-                <li><a href="https://dev.to/">Dev.to Community</a></li>
-                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://www.udemy.com/">Udemy</a></li>
-                <li><a href="https://placeholder.com/">Image Placeholder</a></li>
+                <li>Assignment 1</li>
+                <li>Assignment 2</li>
+                <li>Assignment 3</li>
             </ul>
+        </section>
+        
+        <section class="card">
+            <h2>Sinaloa, Mexico</h2>
+            <figure>
+                <img src="images/sinaloa-image.webp" alt="Sinaloa image" width="200">
+                <figcaption>Sinaloa</figcaption>
+            </figure>
+        </section>
+        
+        <section class="card full-width">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="filter-all" class="filter-button active">All</button>
+                <button id="filter-cse" class="filter-button">CSE</button>
+                <button id="filter-wdd" class="filter-button">WDD</button>
+            </div>
+            <div id="course-container"></div>
+            <div class="credit-info">
+                Total Credits: <span id="total-credits">0</span>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> &#x2600; Erik German &#x2600; Sinaloa, Mexico</p>
+        <p>&copy; <span id="currentyear"></span> &#x2600; Erik German &#x2600; Sinaloa, Mexico <img src="images/mexico-flag.webp" alt="Mexico Flag" width="20"></p>
         <p id="lastModified"></p>
     </footer>
 </body>

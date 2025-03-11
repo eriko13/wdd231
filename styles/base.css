@@ -1,5 +1,5 @@
 /* base.css for WDD 131 - Dynamic Web Fundamentals */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 :root {
   --primary-color: #1d4e89;
@@ -8,6 +8,8 @@
   --accent2-color: #2a9d8f;
   --heading-font: 'Montserrat', sans-serif;
   --paragraph-font: 'Roboto', sans-serif;
+  --completed-color: #2a9d8f;
+  --not-completed-color: #8b4513;
 }
 
 * {
@@ -28,6 +30,22 @@ header {
   color: var(--secondary-color);
   padding: 1rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,7 +67,7 @@ nav a {
   transition: background-color 0.3s, color 0.3s;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
   background-color: var(--accent1-color);
   color: #333;
   border-radius: 4px;
@@ -59,7 +77,7 @@ main {
   max-width: 1200px;
   margin: 1rem auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   padding: 0 1rem;
 }
@@ -70,6 +88,7 @@ main {
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border: 1px solid #ddd;
+  margin-bottom: 1rem;
 }
 
 .card h2 {
@@ -111,6 +130,84 @@ main {
   line-height: 1.5;
 }
 
+/* Course section styles */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.filter-button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--paragraph-font);
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover, .filter-button.active {
+  background-color: var(--accent1-color);
+  color: #333;
+}
+
+#course-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.course-card {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.course-card h3 {
+  color: var(--secondary-color);
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.completed h3 {
+  background-color: var(--completed-color);
+}
+
+.not-completed h3 {
+  background-color: var(--not-completed-color);
+}
+
+.course-card p {
+  margin: 0.5rem 0;
+}
+
+.course-card .status {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.completed .status {
+  color: var(--completed-color);
+}
+
+.not-completed .status {
+  color: var(--not-completed-color);
+}
+
+.credit-info {
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -142,11 +239,18 @@ ul a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+/* Responsive styles */
+@media screen and (min-width: 768px) {
   main {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   
+  .full-width {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: center;
@@ -154,5 +258,59 @@ ul a:hover {
   
   nav a {
     margin: 0.25rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  header img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  #course-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  nav {
+    display: none;
+    width: 100%;
+  }
+  
+  nav.show {
+    display: flex;
   }
 } 
