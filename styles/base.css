@@ -1,4 +1,5 @@
 /* base.css for WDD 131 - Dynamic Web Fundamentals */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 :root {
   --primary-color: #1d4e89;
@@ -238,6 +239,29 @@ ul a:hover {
   text-decoration: underline;
 }
 
+/* Two-column layout */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.two-column-layout .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.two-column-layout .card figure {
+  margin: 1rem auto;
+}
+
+.two-column-layout .card p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
 /* Responsive styles */
 @media screen and (min-width: 768px) {
   main {
@@ -246,6 +270,11 @@ ul a:hover {
   
   .full-width {
     grid-column: 1 / -1;
+  }
+  
+  .two-column-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 }
 
@@ -312,4 +341,20 @@ ul a:hover {
   nav.show {
     display: flex;
   }
+}
+
+/* Make sure the cards in the two-column layout have equal height */
+.two-column-layout .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.two-column-layout .card figure {
+  margin: 1rem auto;
+}
+
+.two-column-layout .card p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
 } 
