@@ -69,8 +69,9 @@ nav a {
 
 nav a:hover, nav a.active {
   background-color: var(--accent1-color);
-  color: #333;
+  color: #000000;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 main {
@@ -153,7 +154,8 @@ main {
 
 .filter-button:hover, .filter-button.active {
   background-color: var(--accent1-color);
-  color: #333;
+  color: #000000;
+  font-weight: bold;
 }
 
 #course-container {
