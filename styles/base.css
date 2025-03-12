@@ -200,13 +200,15 @@ main {
 }
 
 .completed .status {
-  color: var(--completed-color);
+  color: #064035;
   font-size: 1.1rem;
+  font-weight: 900;
 }
 
 .not-completed .status {
-  color: var(--not-completed-color);
+  color: #3d1c06;
   font-size: 1.1rem;
+  font-weight: 900;
 }
 
 .credit-info {
