@@ -8,8 +8,8 @@
   --accent2-color: #2a9d8f;
   --heading-font: 'Montserrat', sans-serif;
   --paragraph-font: 'Roboto', sans-serif;
-  --completed-color: #2a9d8f;
-  --not-completed-color: #8b4513;
+  --completed-color: #0a6b5e;
+  --not-completed-color: #5e2c0b;
 }
 
 * {
@@ -105,6 +105,8 @@ main {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.5rem;
   margin: 1rem 0;
+  color: #000000;
+  font-weight: bold;
 }
 
 .card img {
@@ -174,6 +176,8 @@ main {
   padding: 0.5rem;
   margin: -1rem -1rem 1rem -1rem;
   border-radius: 8px 8px 0 0;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .completed h3 {
@@ -195,10 +199,12 @@ main {
 
 .completed .status {
   color: var(--completed-color);
+  font-size: 1.1rem;
 }
 
 .not-completed .status {
   color: var(--not-completed-color);
+  font-size: 1.1rem;
 }
 
 .credit-info {
