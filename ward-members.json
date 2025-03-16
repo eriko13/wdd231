@@ -1,0 +1,55 @@
+{
+    "families": [
+        {
+            "family_name": "Anderson",
+            "move_in_date": "2025-03-15",
+            "number_of_people": 4,
+            "visited_by_bishopric": true,
+            "family_members": [
+                {
+                    "name": "John Anderson",
+                    "gender": "Male",
+                    "birthdate": "1970-03-25"
+                },
+                {
+                    "name": "Sarah Anderson",
+                    "gender": "Female",
+                    "birthdate": "1972-07-12"
+                },
+                {
+                    "name": "Emily Anderson",
+                    "gender": "Female",
+                    "birthdate": "2000-11-30"
+                },
+                {
+                    "name": "Michael Anderson",
+                    "gender": "Male",
+                    "birthdate": "2003-09-05"
+                }
+            ]
+        },
+        {
+            "family_name": "Martinez",
+            "move_in_date": "2025-01-01",
+            "number_of_people": 3,
+            "visited_by_bishopric": false,
+            "family_members": [
+                {
+                    "name": "Carlos Martinez",
+                    "gender": "Male",
+                    "birthdate": "1975-06-18"
+                },
+                {
+                    "name": "Maria Martinez",
+                    "gender": "Female",
+                    "birthdate": "1978-04-22"
+                },
+                {
+                    "name": "Luis Martinez",
+                    "gender": "Male",
+                    "birthdate": "2008-08-15"
+                }
+            ]
+        }
+    ]
+} 
