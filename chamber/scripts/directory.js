@@ -2,12 +2,14 @@
 const directoryContainer = document.getElementById('directory-container');
 const gridViewBtn = document.getElementById('grid-view');
 const listViewBtn = document.getElementById('list-view');
+const searchInput = document.getElementById('directory-search');
 
 // Path to the JSON data file
 const dataUrl = 'data/members.json';
 
 // Array to store the member data
 let membersData = [];
+let filteredMembers = [];
 
 // Fetch the member data from the JSON file
 async function getMemberData() {
@@ -18,6 +20,7 @@ async function getMemberData() {
     }
     const data = await response.json();
     membersData = data.members;
+    filteredMembers = [...membersData];
     displayMembers(membersData);
   } catch (error) {
     console.error('Error fetching member data:', error);
@@ -32,6 +35,12 @@ function displayMembers(members) {
   
   // Check if we're in grid or list view
   const isGridView = directoryContainer.classList.contains('grid-view');
+  
+  // Show message if no results found
+  if (members.length === 0) {
+    directoryContainer.innerHTML = '<p class="no-results">No businesses match your search. Please try a different search term.</p>';
+    return;
+  }
   
   // Create and append member cards/items
   members.forEach(member => {
@@ -68,6 +77,20 @@ function displayMembers(members) {
   });
 }
 
+// Function to filter members based on search input
+function filterMembers(searchTerm) {
+  if (!searchTerm) {
+    return membersData;
+  }
+  
+  const term = searchTerm.toLowerCase();
+  return membersData.filter(member => 
+    member.name.toLowerCase().includes(term) || 
+    member.description.toLowerCase().includes(term) ||
+    member.address.toLowerCase().includes(term)
+  );
+}
+
 // Helper function to convert membership level number to text
 function getMembershipLevel(level) {
   switch (level) {
@@ -89,7 +112,7 @@ gridViewBtn.addEventListener('click', () => {
     directoryContainer.classList.remove('list-view');
     gridViewBtn.classList.add('active');
     listViewBtn.classList.remove('active');
-    displayMembers(membersData);
+    displayMembers(filteredMembers);
   }
 });
 
@@ -99,8 +122,15 @@ listViewBtn.addEventListener('click', () => {
     directoryContainer.classList.remove('grid-view');
     listViewBtn.classList.add('active');
     gridViewBtn.classList.remove('active');
-    displayMembers(membersData);
+    displayMembers(filteredMembers);
   }
+});
+
+// Event listener for search input
+searchInput.addEventListener('input', () => {
+  const searchTerm = searchInput.value.trim();
+  filteredMembers = filterMembers(searchTerm);
+  displayMembers(filteredMembers);
 });
 
 // Initialize the page
