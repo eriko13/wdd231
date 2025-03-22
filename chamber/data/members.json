@@ -1,0 +1,85 @@
+{
+  "members": [
+    {
+      "name": "Desert Oasis Tours",
+      "address": "Calle 10 de Mayo, Culiacan",
+      "phone": "+52 667 123-4567",
+      "website": "https://desertoasistours.com",
+      "image": "desert-oasis.webp",
+      "membershipLevel": 3,
+      "description": "Guided tours of the Culiacan Desert and historical sites around Culiacan."
+    },
+    {
+      "name": "Sahara Textiles",
+      "address": "Calle 10 de Mayo, Culiacan",
+      "phone": "+52 667 234-5678",
+      "website": "https://saharatextiles.com",
+      "image": "sahara-textiles.webp",
+      "membershipLevel": 2,
+      "description": "Traditional Malian textiles and fabrics, specializing in indigo-dyed cloth."
+    },
+    {
+      "name": "Culiacan Heritage Foundation",
+      "address": "Calle 10 de Mayo, Culiacan",
+      "phone": "+52 667 345-6789",
+      "website": "https://culiacanheritage.org",
+      "image": "culiacan-heritage.webp",
+      "membershipLevel": 3,
+      "description": "Non-profit organization dedicated to preserving Culiacan's historical manuscripts and cultural heritage."
+    },
+    {
+      "name": "Sahel Solar Solutions",
+      "address": "Calle 10 de Mayo, Culiacan",
+      "phone": "+52 667 456-7890",
+      "website": "https://sahelsolar.com",
+      "image": "sahel-solar.webp",
+      "membershipLevel": 2,
+      "description": "Renewable energy provider specializing in solar installations for homes and businesses."
+    },
+    {
+      "name": "Mali Spice Market",
+      "address": "Calle 10 de Mayo, Culiacan",
+      "phone": "+52 667 567-8901",
+      "website": "https://malispice.com",
+      "image": "mali-spice.webp",
+      "membershipLevel": 1,
+      "description": "Supplier of authentic Malian spices, herbs, and traditional cooking ingredients."
+    },
+    {
+      "name": "Culiacan Tech Hub",
+      "address": "Calle 10 de Mayo, Culiacan",
+      "phone": "+52 667 678-9012",
+      "website": "https://culiacantech.com",
+      "image": "culiacan-tech.webp",
+      "membershipLevel": 3,
+      "description": "Co-working space and technology incubator supporting local entrepreneurs and startups."
+    },
+    {
+      "name": "Sahara Crafts Cooperative",
+      "address": "Calle 10 de Mayo, Culiacan",
+      "phone": "+52 667 789-0123",
+      "website": "https://saharacrafts.org",
+      "image": "sahara-crafts.webp",
+      "membershipLevel": 1,
+      "description": "Cooperative of local artisans producing traditional Malian crafts and souvenirs."
+    },
+    {
+      "name": "Niger River Fisheries",
+      "address": "Calle 10 de Mayo, Culiacan",
+      "phone": "+52 667 890-1234",
+      "website": "https://nigerriverfisheries.com",
+      "image": "niger-river.webp",
+      "membershipLevel": 2,
+      "description": "Sustainable fishing company providing fresh fish from the Niger River to local markets and restaurants."
+    },
+    {
+      "name": "Culiacan Medical Center",
+      "address": "Calle 10 de Mayo, Culiacan",
+      "phone": "+52 667 901-2345",
+      "website": "https://culiacanmedical.org",
+      "image": "culiacan-medical.webp",
+      "membershipLevel": 3,
+      "description": "Modern medical facility providing healthcare services to the Culiacan region."
+    }
+  ]
+} 

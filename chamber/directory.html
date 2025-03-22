@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory - Culiacan Chamber of Commerce</title>
+    <meta name="description" content="Directory of businesses and organizations that are members of the Culiacan Chamber of Commerce">
+    <meta name="author" content="Erik German">
+    
+    <!-- Facebook Open Graph Meta Properties -->
+    <meta property="og:title" content="Business Directory - Culiacan Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/culiacan-logo.webp">
+    <meta property="og:url" content="https://eriko13.github.io/wdd231/chamber/directory.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/culiacan-logo.webp" alt="Culiacan Chamber of Commerce Logo">
+            <div class="title-container">
+                <h1>Culiacan</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+            <div class="dark-mode-toggle">
+                <span class="material-icons">dark_mode</span>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="directory">
+        <h2>Business Directory</h2>
+        
+        <div class="view-toggle">
+            <button id="grid-view" class="active">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        
+        <div id="directory-container" class="grid-view">
+            <!-- Member cards will be populated here by JavaScript -->
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/culiacan-logo.webp" alt="Culiacan Chamber of Commerce Logo">
+                <div class="footer-title">
+                    <h3>Culiacan Chamber of Commerce</h3>
+                    <p>Calle 10 de Mayo</p>
+                    <p>Culiacan, Mexico 80000</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@culiacancc.org</p>
+                <p>(223) 555-2300</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="YouTube"><img src="images/youtube-icon.webp" alt="YouTube"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/twitter-icon.webp" alt="Twitter"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="images/linkedin-icon.webp" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p>&copy; <span id="currentyear"></span> Culiacan Chamber of Commerce</p>
+            <p>WDD231 Class Project</p>
+            <p>Erik German</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
