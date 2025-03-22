@@ -214,7 +214,6 @@ main h2:after {
 /* Directory Page Styles */
 .view-toggle {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
@@ -224,18 +223,21 @@ main h2:after {
   background-color: var(--button-color);
   color: white;
   border: none;
-  padding: 0.6rem 1.2rem;
+  padding: 0.7rem 1.2rem;
   margin: 0 0.5rem;
   cursor: pointer;
-  border-radius: var(--border-radius);
-  transition: var(--transition);
+  border-radius: 5px;
+  transition: all 0.2s ease;
   font-weight: 600;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 .view-toggle button:hover {
   background-color: var(--button-hover);
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .view-toggle button.active {
@@ -490,6 +492,25 @@ footer {
   #directory-container.grid-view {
     grid-template-columns: 1fr;
   }
+  
+  .directory-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-container {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+  
+  .view-toggle {
+    width: 100%;
+  }
+  
+  .view-toggle button {
+    flex: 1;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -556,64 +577,6 @@ footer {
   outline: none;
   border-color: var(--accent-color);
   box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
-}
-
-.view-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.view-toggle button {
-  background-color: var(--button-color);
-  color: white;
-  border: none;
-  padding: 0.7rem 1.2rem;
-  margin: 0 0.5rem;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.2s ease;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
-.view-toggle button:hover {
-  background-color: var(--button-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.view-toggle button.active {
-  background-color: var(--button-active);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-  .directory-controls {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .search-container {
-    margin-right: 0;
-    margin-bottom: 1rem;
-    max-width: 100%;
-  }
-  
-  .view-toggle {
-    width: 100%;
-  }
-  
-  .view-toggle button {
-    flex: 1;
-  }
 }
 
 /* No Results Message */
