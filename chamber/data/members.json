@@ -1,85 +1,85 @@
 {
   "members": [
     {
-      "name": "Desert Oasis Tours",
-      "address": "Calle 10 de Mayo, Culiacan",
-      "phone": "+52 667 123-4567",
-      "website": "https://desertoasistours.com",
-      "image": "desert-oasis.webp",
+      "name": "Dolce Mia",
+      "address": "Blvd. Virreyes 357, Montebello, 80227 Culiacán Rosales, Sin.",
+      "phone": "+52 667 258-2637",
+      "website": "https://www.dolcemiarestaurante.com/",
+      "image": "dolce-mia.avif",
       "membershipLevel": 3,
-      "description": "Guided tours of the Culiacan Desert and historical sites around Culiacan."
+      "description": "Dolce Mia is a restaurant that offers a variety of Italian dishes, including pasta, pizza, and gelato."
     },
     {
-      "name": "Sahara Textiles",
-      "address": "Calle 10 de Mayo, Culiacan",
+      "name": "Casa Oriental",
+      "address": "Blvrd Enrique Sánchez Alonso 2079, Desarrollo Urbano Tres Ríos, 80020 Culiacán Rosales, Sin.",
       "phone": "+52 667 234-5678",
-      "website": "https://saharatextiles.com",
-      "image": "sahara-textiles.webp",
+      "website": "https://casaoriental.com.mx/",
+      "image": "casa-oriental.png",
       "membershipLevel": 2,
-      "description": "Traditional Malian textiles and fabrics, specializing in indigo-dyed cloth."
+      "description": "Casa Oriental is a restaurant that offers a variety of Asian dishes, including sushi, ramen, and dim sum."
     },
     {
-      "name": "Culiacan Heritage Foundation",
-      "address": "Calle 10 de Mayo, Culiacan",
-      "phone": "+52 667 345-6789",
-      "website": "https://culiacanheritage.org",
-      "image": "culiacan-heritage.webp",
+      "name": "Narcisa Desayunos",
+      "address": "Blvd. Pedro Infante 2375, Desarrollo Urbano Tres Ríos, 80020 Culiacán Rosales, Sin.",
+      "phone": "+52 667 699-7613",
+      "website": "https://www.instagram.com/narcisadesayunos/",
+      "image": "narcisa.png",
       "membershipLevel": 3,
-      "description": "Non-profit organization dedicated to preserving Culiacan's historical manuscripts and cultural heritage."
+      "description": "Narcisa Desayunos is a restaurant that offers a variety of Mexican dishes, including tacos, burritos, and enchiladas."
     },
     {
-      "name": "Sahel Solar Solutions",
-      "address": "Calle 10 de Mayo, Culiacan",
-      "phone": "+52 667 456-7890",
-      "website": "https://sahelsolar.com",
-      "image": "sahel-solar.webp",
+      "name": "Panama Restaurant",
+      "address": "Gran Avenida El Dorado 1104, Las Quintas, 80060 Culiacán Rosales, Sin.",
+      "phone": "+52 667 717-4343",
+      "website": "https://www.panama.com.mx/",
+      "image": "panama.png",
+      "membershipLevel": 3,
+      "description": "Panama Restaurant is a restaurant that offers a variety of Mexican dishes, including tacos, burritos, and enchiladas."
+    },
+    {
+      "name": "Cabanna",
+      "address": "Blvd. Francisco Labastida Ochoa 1695, Desarrollo Urbano Tres Ríos, 80020 Culiacán Rosales, Sin.",
+      "phone": "+52 667 712-0919",
+      "website": "https://cabanna.com.mx/",
+      "image": "cabanna.png",
+      "membershipLevel": 3,
+      "description": "Cabanna is a restaurant that offers a variety of Mexican dishes, including tacos, burritos, and enchiladas."
+    },
+    {
+      "name": "Sushi Factory",
+      "address": "Blvrd Enrique Sánchez Alonso 1651, Desarrollo Urbano Tres Ríos, 80020 Culiacán Rosales, Sin.",
+      "phone": "+52 667 716-1800",
+      "website": "https://www.sushifactory.com.mx/",
+      "image": "sushi-factory.png",
+      "membershipLevel": 3,
+      "description": "Sushi Factory is a restaurant that offers a variety of Japanese dishes, including sushi, sashimi, and tempura."
+    },
+    {
+      "name": "Sushi Ranch Roll",
+      "address": "Fracc Musalá Isla Bonita, Raquet Club, 80060 Culiacán, Sinaloa",
+      "phone": "+526674088408",
+      "website": "https://www.ranchrollsushi.com/",
+      "image": "sushi-ranch-roll.png",
       "membershipLevel": 2,
-      "description": "Renewable energy provider specializing in solar installations for homes and businesses."
+      "description": "Sushi Ranch Roll is a restaurant that offers a variety of Japanese dishes, including sushi, sashimi, and tempura."
     },
     {
-      "name": "Mali Spice Market",
-      "address": "Calle 10 de Mayo, Culiacan",
-      "phone": "+52 667 567-8901",
-      "website": "https://malispice.com",
-      "image": "mali-spice.webp",
-      "membershipLevel": 1,
-      "description": "Supplier of authentic Malian spices, herbs, and traditional cooking ingredients."
-    },
-    {
-      "name": "Culiacan Tech Hub",
-      "address": "Calle 10 de Mayo, Culiacan",
-      "phone": "+52 667 678-9012",
-      "website": "https://culiacantech.com",
-      "image": "culiacan-tech.webp",
-      "membershipLevel": 3,
-      "description": "Co-working space and technology incubator supporting local entrepreneurs and startups."
-    },
-    {
-      "name": "Sahara Crafts Cooperative",
-      "address": "Calle 10 de Mayo, Culiacan",
-      "phone": "+52 667 789-0123",
-      "website": "https://saharacrafts.org",
-      "image": "sahara-crafts.webp",
-      "membershipLevel": 1,
-      "description": "Cooperative of local artisans producing traditional Malian crafts and souvenirs."
-    },
-    {
-      "name": "Niger River Fisheries",
-      "address": "Calle 10 de Mayo, Culiacan",
-      "phone": "+52 667 890-1234",
-      "website": "https://nigerriverfisheries.com",
-      "image": "niger-river.webp",
+      "name": "La Marque",
+      "address": "Blvd. Ciudades Hermanas 150-16, Guadalupe, 80220 Culiacán Rosales, Sin.",
+      "phone": "+52 667 146-0860",
+      "website": "https://lamarque.mx/",
+      "image": "la-marque.png",
       "membershipLevel": 2,
-      "description": "Sustainable fishing company providing fresh fish from the Niger River to local markets and restaurants."
+      "description": "La Marque is a restaurant that offers a variety of cakes and pastries."
     },
     {
-      "name": "Culiacan Medical Center",
-      "address": "Calle 10 de Mayo, Culiacan",
-      "phone": "+52 667 901-2345",
-      "website": "https://culiacanmedical.org",
-      "image": "culiacan-medical.webp",
+      "name": "Caprichito",
+      "address": "Montebello 99, Montebello, 80227 Culiacán Rosales, Sin.",
+      "phone": "+52 667 146-0665",
+      "website": "https://caprichitobello.com/",
+      "image": "caprichito.png",
       "membershipLevel": 3,
-      "description": "Modern medical facility providing healthcare services to the Culiacan region."
+      "description": "Caprichito is a restaurant that offers a variety of Mexican dishes, including tacos, burritos, and enchiladas."
     }
   ]
 } 
