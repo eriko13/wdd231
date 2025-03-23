@@ -1,8 +1,9 @@
 // Constants
-const API_KEY = 'YOUR_OPENWEATHERMAP_API_KEY';
+// Import the API key from config file
+const API_KEY = config.WEATHER_API_KEY; // This references the value from config.js
 const CULIACAN_COORDS = { lat: 24.8079, lon: -107.3940 }; // Culiacan coordinates
 const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${CULIACAN_COORDS.lat}&lon=${CULIACAN_COORDS.lon}&units=imperial&appid=${API_KEY}`;
-const FORECAST_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${CULIACAN_COORDS.lat}&lon=${CULIACAN_COORDS.lon}&units=imperial&appid=${API_KEY}`;
+const FORECAST_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${CULIACAN_COORDS.lat}&lon=${CULIACAN_COORDS.lon}&units=imperial&cnt=24&appid=${API_KEY}`;
 const MEMBERS_DATA_URL = 'data/members.json';
 
 // Wait for DOM to be fully loaded before executing
@@ -91,6 +92,8 @@ function displayForecast(forecastData) {
     // Find the forecasts for the next three days at noon
     const threeDayForecast = [];
     const processedDays = new Set();
+
+    
     
     forecastData.list.forEach(forecast => {
         const forecastDate = new Date(forecast.dt * 1000);
