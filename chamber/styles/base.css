@@ -590,4 +590,348 @@ footer {
   color: var(--secondary-color);
   font-size: 1.1rem;
   border: 1px solid var(--border-color);
+}
+
+/* Home Page Styles */
+.home {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.hero-content {
+  padding: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--button-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Events Section */
+.events {
+  margin-bottom: 2rem;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.events h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.event-card {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.event-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.event-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.event-date {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.event-link {
+  display: inline-block;
+  color: var(--link-color);
+  font-weight: bold;
+  margin-top: 0.8rem;
+  transition: var(--transition);
+}
+
+.event-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Weather Section */
+.weather {
+  margin-bottom: 2rem;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.weather h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.weather-icon-container {
+  flex: 0 0 40%;
+  text-align: center;
+}
+
+.weather-icon-container img {
+  max-width: 100px;
+}
+
+.weather-details {
+  flex: 0 0 60%;
+}
+
+.weather-details p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.weather-details p:last-child {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.forecast h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.forecast-day {
+  flex: 0 0 30%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.forecast-day:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.forecast-day img {
+  margin: 0.5rem 0;
+  max-width: 50px;
+}
+
+/* Spotlights Section */
+.spotlights {
+  margin-bottom: 2rem;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.spotlights h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+#spotlights-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.spotlight-card {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+}
+
+.spotlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.spotlight-image {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.spotlight-image img {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.spotlight-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.membership-level {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.website-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--link-color);
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.website-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Media Queries for Home Page */
+@media screen and (min-width: 769px) {
+  .hero {
+    flex-direction: row-reverse;
+    align-items: stretch;
+    max-height: 500px;
+  }
+
+  .hero-content {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-image {
+    flex: 0 0 60%;
+    max-height: 500px;
+  }
+
+  .spotlight-card {
+    flex: 0 0 48%;
+  }
+
+  .spotlight-card:last-child:nth-child(odd) {
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .home {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1.5rem;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .events {
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 0;
+  }
+
+  .weather {
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 0;
+  }
+
+  .spotlights {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  .spotlight-card {
+    flex: 0 0 31%;
+  }
+
+  .spotlight-card:last-child:nth-child(odd) {
+    flex: 0 0 31%;
+  }
 } 
