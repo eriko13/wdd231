@@ -25,6 +25,7 @@
     <!-- JavaScript -->
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,8 +35,9 @@
                 <h1>Culiacan</h1>
                 <p>Chamber of Commerce</p>
             </div>
+            <button id="hamburger-btn" aria-label="Toggle Menu" style="display: none;">☰</button>
         </div>
-        <nav>
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="directory.html" class="active">DIRECTORY</a></li>
@@ -54,8 +56,8 @@
             </div>
             
             <div class="view-toggle">
-                <button id="grid-view" class="active">Grid View</button>
-                <button id="list-view">List View</button>
+                <button id="grid-view" class="active">GRID VIEW</button>
+                <button id="list-view">LIST VIEW</button>
             </div>
         </div>
         

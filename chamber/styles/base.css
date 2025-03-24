@@ -7,7 +7,7 @@
   --accent-color: #084179;
   --background-color: #f4f4f4;
   --text-color: #333;
-  --header-background: linear-gradient(to right, #e8e8e8, #f8f8f8);
+  --header-background: linear-gradient(to right, #f8f8f8, #e0e0e0);
   --footer-background: #333;
   --footer-text: #fff;
   --card-background: #fff;
@@ -428,45 +428,69 @@ footer {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   header {
-    padding: 0.8rem 0.6rem;
+    padding: 0.7rem;
   }
   
   .logo-container {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
   }
   
   .logo-container img {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
     width: 50px;
     height: 50px;
+    margin-right: 0.8rem;
   }
   
   .title-container {
-    text-align: center;
+    flex: 1;
   }
   
   .title-container h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
   .title-container p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+  }
+  
+  #hamburger-btn {
+    display: block !important;
+  }
+  
+  nav#main-nav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  nav#main-nav.open {
+    max-height: 200px;
+  }
+  
+  nav#main-nav.closed {
+    max-height: 0;
   }
   
   nav ul {
-    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0;
   }
   
   nav li {
-    margin: 0 0.3rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
   }
   
   nav a {
-    font-size: 0.8rem;
-    padding: 0.3rem 0;
+    display: block;
+    padding: 0.8rem 0;
+    font-size: 1rem;
   }
   
   .footer-content {
@@ -474,7 +498,7 @@ footer {
   }
   
   .footer-logo {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   
   #directory-container.grid-view {
@@ -483,13 +507,11 @@ footer {
   
   .directory-controls {
     flex-direction: column;
-    align-items: stretch;
   }
   
   .search-container {
-    margin-right: 0;
+    width: 100%;
     margin-bottom: 1rem;
-    max-width: 100%;
   }
   
   .view-toggle {
@@ -939,4 +961,23 @@ footer {
   .spotlight-card:last-child:nth-child(odd) {
     flex: 0 0 31%;
   }
+}
+
+/* Hamburger Menu */
+#hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+  color: var(--accent-color);
+  transition: var(--transition);
+  padding: 5px 10px;
+  position: relative;
+  z-index: 100;
+}
+
+#hamburger-btn:hover {
+  color: var(--button-hover);
 } 
