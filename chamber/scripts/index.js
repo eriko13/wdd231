@@ -53,7 +53,6 @@ function displayCurrentWeather(weatherData) {
         
         // Set weather icon for the first weather condition
         const iconCode = weatherData.weather[0].icon;
-        weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
         weatherIcon.alt = weatherData.weather[0].description;
     }
 }
