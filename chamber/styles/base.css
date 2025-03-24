@@ -3,8 +3,8 @@
 /* Variables */
 :root {
   --primary-color: #333;
-  --secondary-color: #666;
-  --accent-color: #0066cc;
+  --secondary-color: #3d3c3c;
+  --accent-color: #084179;
   --background-color: #f4f4f4;
   --text-color: #333;
   --header-background: linear-gradient(to right, #e8e8e8, #f8f8f8);
@@ -12,10 +12,10 @@
   --footer-text: #fff;
   --card-background: #fff;
   --border-color: #ddd;
-  --button-color: #0066cc;
+  --button-color: #0658ab;
   --button-hover: #004c99;
   --button-active: #003366;
-  --link-color: #0066cc;
+  --link-color: #03498e;
   --link-hover: #004c99;
   --max-width: 1200px;
   --border-radius: 5px;
@@ -197,18 +197,6 @@ main h2 {
   padding-bottom: 1rem;
   font-weight: 700;
   letter-spacing: 0.8px;
-}
-
-main h2:after {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(to right, var(--accent-color), #66aaff);
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 2px;
 }
 
 /* Directory Page Styles */
@@ -621,7 +609,7 @@ footer {
 .hero-content {
   padding: 2rem;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -634,6 +622,8 @@ footer {
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  color: #000000;
+
 }
 
 .cta-button {
@@ -650,6 +640,7 @@ footer {
 }
 
 .cta-button:hover {
+  color: black;
   background-color: var(--button-hover);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
