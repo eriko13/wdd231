@@ -1,6 +1,4 @@
-// Constants
-// Import the API key from config file
-const API_KEY = config.WEATHER_API_KEY; // This references the value from config.js
+const API_KEY = config.WEATHER_API_KEY;
 const CULIACAN_COORDS = { lat: 24.8079, lon: -107.3940 }; // Culiacan coordinates
 const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${CULIACAN_COORDS.lat}&lon=${CULIACAN_COORDS.lon}&units=imperial&appid=${API_KEY}`;
 const FORECAST_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${CULIACAN_COORDS.lat}&lon=${CULIACAN_COORDS.lon}&units=imperial&cnt=24&appid=${API_KEY}`;
