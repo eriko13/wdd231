@@ -456,7 +456,7 @@ footer {
   }
   
   #hamburger-btn {
-    display: block !important;
+    display: none;
   }
   
   nav#main-nav {
