@@ -72,15 +72,18 @@
                     <label>Business/Organization Name* <input type="text" name="org_name" id="org_name" required title="Enter your business or organization name" autocomplete="organization"></label>
                     
                     <div class="membership-options">Membership Level*
-                        <label><input type="radio" name="membership_level" value="np" title="Non-Profit Membership"> NP Membership (Free)</label>
-                        <label><input type="radio" name="membership_level" value="bronze" title="Bronze Membership"> Bronze Membership</label>
-                        <label><input type="radio" name="membership_level" value="silver" title="Silver Membership"> Silver Membership</label>
-                        <label><input type="radio" name="membership_level" value="gold" title="Gold Membership"> Gold Membership</label>
+                        <label for="membership_np">NP Membership (Free)</label>
+                        <input type="radio" id="membership_np" name="membership_level" value="np" title="Non-Profit Membership">
+                        <label for="membership_bronze">Bronze Membership</label>
+                        <input type="radio" id="membership_bronze" name="membership_level" value="bronze" title="Bronze Membership">
+                        <label for="membership_silver">Silver Membership</label>
+                        <input type="radio" id="membership_silver" name="membership_level" value="silver" title="Silver Membership">
+                        <label for="membership_gold">Gold Membership</label>
+                        <input type="radio" id="membership_gold" name="membership_level" value="gold" title="Gold Membership">
                     </div>
-
-                    <label>Business/Organization Description
-                        <textarea name="org_description" id="org_description" title="Enter a brief description of your business or organization"></textarea>
-                    </label>
+                        <label>Business/Organization Description
+                            <textarea name="org_description" id="org_description" title="Enter a brief description of your business or organization"></textarea>
+                        </label>
                     
                     <input type="hidden" id="timestamp" name="timestamp" value="">
                 </fieldset>

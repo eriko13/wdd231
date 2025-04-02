@@ -68,14 +68,20 @@ label textarea:focus {
 }
 
 .membership-options label {
-    display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     font-weight: normal;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+
 }
 
-.membership-options label input[type="radio"] {
-    margin-right: 0.5rem;
+.membership-options input[type="radio"] {
+    margin-right: 0;
     accent-color: var(--primary-color);
+    vertical-align: middle;
+    margin-bottom: 0.8rem;
+    margin-left: 0.5rem;
+
 }
 
 textarea {
