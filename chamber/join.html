@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Culiacan Chamber of Commerce</title>
+    <meta name="description" content="Join the Culiacan Chamber of Commerce and become part of our growing business community.">
+    <meta name="author" content="Erik German">
+    
+    <meta property="og:title" content="Join - Culiacan Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://eriko13.github.io/wdd231/chamber/images/Culiacan_Escudo.png"> 
+    <meta property="og:url" content="https://eriko13.github.io/wdd231/chamber/join.html">
+    
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/join.js" defer></script> 
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/Culiacan_Escudo.png" alt="Culiacan Chamber of Commerce Logo">
+            <div class="title-container">
+                <h1>Culiacan</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Menu" style="display: none;">☰</button>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="directory.html">DIRECTORY</a></li>
+                <li><a href="join.html" class="active">JOIN</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="join-main">
+        <h1>Join the Chamber</h1>
+        <p>Please fill out the form below to apply for membership.</p>
+        <div class="join-content"> 
+            <form method="get" action="thankyou.html">
+                
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    
+                    <label>First Name* <input type="text" name="fname" id="fname" required title="Enter your first name" autocomplete="given-name"></label>
+                    
+                    <label>Last Name* <input type="text" name="lname" id="lname" required title="Enter your last name" autocomplete="family-name"></label>
+                    
+                    <label>Position Title <input type="text" name="title" id="title" pattern="[a-zA-Z\s-]{7,}" title="Enter your position title (min 7 alpha characters, spaces, or hyphens)" autocomplete="organization-title"></label>
+                    
+                    <label>Email* <input type="email" name="email" id="email" required title="Enter your email address" placeholder="example@email.com" autocomplete="email"></label>
+                    
+                    <label>Mobile Phone* <input type="tel" name="phone" id="phone" required title="Enter your mobile phone number" autocomplete="tel"></label>
+                
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    
+                    <label>Business/Organization Name* <input type="text" name="org_name" id="org_name" required title="Enter your business or organization name" autocomplete="organization"></label>
+                    
+                    <label>Membership Level*
+                        <div class="membership-options">
+                            <label><input type="radio" name="membership_level" value="np" title="Non-Profit Membership"> NP Membership (Free)</label>
+                            <label><input type="radio" name="membership_level" value="bronze" title="Bronze Membership"> Bronze Membership</label>
+                            <label><input type="radio" name="membership_level" value="silver" title="Silver Membership"> Silver Membership</label>
+                            <label><input type="radio" name="membership_level" value="gold" title="Gold Membership"> Gold Membership</label>
+                        </div>
+                    </label>
+
+                    <label>Business/Organization Description
+                        <textarea name="org_description" id="org_description" title="Enter a brief description of your business or organization"></textarea>
+                    </label>
+                    
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                </fieldset>
+
+                <input type="submit" value="Join the Chamber" class="submit-button">
+
+            </form>
+
+            <section class="membership-info">
+                <h2>Membership Levels</h2>
+                 <div class="membership-cards">
+                    <div class="card">
+                        <h3>NP Membership</h3>
+                        <p>Basic benefits for small businesses.</p>
+                        <a href="#" class="modal-link" data-modal="np-modal">Learn More</a>
+                    </div>
+                     <div class="card">
+                         <h3>Bronze Membership</h3>
+                         <p>Basic benefits for small businesses.</p>
+                         <a href="#" class="modal-link" data-modal="bronze-modal">Learn More</a>
+                     </div>
+                     <div class="card">
+                         <h3>Silver Membership</h3>
+                         <p>Enhanced benefits and visibility.</p>
+                         <a href="#" class="modal-link" data-modal="silver-modal">Learn More</a>
+                     </div>
+                     <div class="card">
+                         <h3>Gold Membership</h3>
+                         <p>Premium benefits and exclusive access.</p>
+                         <a href="#" class="modal-link" data-modal="gold-modal">Learn More</a>
+                     </div>
+                 </div>
+            </section>
+        </div>
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" data-modal="np-modal">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <ul>
+                    <li>Access to basic resources</li>
+                    <li>Listing in non-profit directory</li>
+                    <li>Networking event access (limited)</li>
+                </ul>
+            </div>
+        </div>
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" data-modal="bronze-modal">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>Standard directory listing</li>
+                    <li>Discounted event tickets</li>
+                    <li>Monthly newsletter</li>
+                </ul>
+            </div>
+        </div>
+         <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" data-modal="silver-modal">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Enhanced directory listing</li>
+                    <li>Free access to select workshops</li>
+                    <li>Opportunity for event sponsorship</li>
+                    <li>Spotlight feature eligibility</li>
+                </ul>
+            </div>
+        </div>
+         <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" data-modal="gold-modal">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Premium directory listing</li>
+                    <li>Free access to all standard events</li>
+                    <li>Priority sponsorship opportunities</li>
+                    <li>Guaranteed spotlight feature</li>
+                    <li>Exclusive round-table discussions</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Culiacan_Escudo.png" alt="Culiacan Chamber of Commerce Logo">
+                <div class="footer-title">
+                    <h3>Culiacan Chamber of Commerce</h3>
+                    <p>Calle 10 de Mayo</p>
+                    <p>Culiacan, Mexico 80000</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@culiacancc.org</p>
+                <p>(223) 555-2300</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p>&copy; <span id="currentyear"></span> Culiacan Chamber of Commerce</p>
+            <p>WDD231 Class Project</p>
+            <p>Erik German</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html> 

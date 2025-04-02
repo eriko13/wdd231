@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Culiacan Chamber of Commerce</title>
+    <meta name="description" content="Thank you for submitting your membership application to the Culiacan Chamber of Commerce.">
+    <meta name="author" content="Erik German">
+    
+    <!-- Facebook Open Graph Meta Properties -->
+    <meta property="og:title" content="Thank You - Culiacan Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://eriko13.github.io/wdd231/chamber/images/Culiacan_Escudo.png"> 
+    <meta property="og:url" content="https://eriko13.github.io/wdd231/chamber/thankyou.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Add specific styles if needed -->
+    <link rel="stylesheet" href="styles/join.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <!-- Script to display submitted data -->
+    <script src="scripts/thankyou.js" defer></script> 
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/Culiacan_Escudo.png" alt="Culiacan Chamber of Commerce Logo">
+            <div class="title-container">
+                <h1>Culiacan</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Menu" style="display: none;">☰</button>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="directory.html">DIRECTORY</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="thankyou-main">
+        <h1>Thank You!</h1>
+        <p>Your membership application has been submitted successfully.</p>
+        
+        <section class="submitted-data">
+            <h2>Application Summary:</h2>
+            <div id="summary-content">
+                <!-- Submitted data will be displayed here by JavaScript -->
+                <p><strong>First Name:</strong> <span id="summary-fname"></span></p>
+                <p><strong>Last Name:</strong> <span id="summary-lname"></span></p>
+                <p><strong>Email:</strong> <span id="summary-email"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="summary-phone"></span></p>
+                <p><strong>Business/Organization:</strong> <span id="summary-org_name"></span></p>
+                <p><strong>Timestamp:</strong> <span id="summary-timestamp"></span></p>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Culiacan_Escudo.png" alt="Culiacan Chamber of Commerce Logo">
+                <div class="footer-title">
+                    <h3>Culiacan Chamber of Commerce</h3>
+                    <p>Calle 10 de Mayo</p>
+                    <p>Culiacan, Mexico 80000</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@culiacancc.org</p>
+                <p>(223) 555-2300</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p>&copy; <span id="currentyear"></span> Culiacan Chamber of Commerce</p>
+            <p>WDD231 Class Project</p>
+            <p>Erik German</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html> 
