@@ -62,6 +62,9 @@ label textarea:focus {
 
 .membership-options {
     padding-top: 0.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .membership-options label {
