@@ -1,0 +1,52 @@
+{
+    "points_of_interest": [
+        {
+            "name": "Catedral de Culiacán",
+            "address": "Ángel Flores 280, Centro, 80000 Culiacán, Sinaloa",
+            "description": "The Cathedral of Culiacán is a historic Catholic church built in the neoclassical style. It stands as one of the most important religious monuments in the city, featuring beautiful architecture and ornate interior decorations.",
+            "image": "images/discover/catedral-de-culiacan.webp"
+        },
+        {
+            "name": "Jardín Botánico Culiacán",
+            "address": "Av. las Americas 2251, Country Tres Ríos, 80030 Culiacán, Sinaloa",
+            "description": "The Culiacán Botanical Garden spans over 10 hectares featuring a remarkable collection of native and exotic plants. It also houses contemporary art installations throughout its grounds, making it a perfect blend of nature and culture.",
+            "image": "images/discover/jardin-botanico.webp"
+        },
+        {
+            "name": "Mercado Garmendia",
+            "address": "Blvd. Niños Héroes 965, Garmendia, 80129 Culiacán, Sinaloa",
+            "description": "This traditional market offers an authentic glimpse into local culture where you can find fresh regional produce, spices, traditional crafts, and sample local cuisine. It's a vibrant hub of daily life in Culiacán.",
+            "image": "images/discover/mercado-garmendia.webp"
+        },
+        {
+            "name": "Parque Las Riberas",
+            "address": "Blvd. Pedro Infante, Country Tres Ríos, 80030 Culiacán, Sinaloa",
+            "description": "A beautiful riverside park extending along the Tamazula River offering recreation areas, walking and cycling paths, sports facilities, and picnic areas. It's a popular spot for families and fitness enthusiasts.",
+            "image": "images/discover/parque-las-riberas.webp"
+        },
+        {
+            "name": "Museo de Arte de Sinaloa",
+            "address": "Av. Ángel Flores 1705, Centro, 80000 Culiacán, Sinaloa",
+            "description": "The Sinaloa Art Museum (MASIN) is housed in a beautifully restored 19th-century building. It features permanent and rotating exhibitions of contemporary art, with a focus on Mexican artists and particularly those from Sinaloa.",
+            "image": "images/discover/museo-de-arte-de-sinaloa.webp"
+        },
+        {
+            "name": "Zoológico de Culiacán",
+            "address": "Blvd. Pedro Infante, Country Tres Ríos, 80030 Culiacán, Sinaloa",
+            "description": "The Culiacán Zoo is home to over 400 animals from 100 different species. It offers educational experiences about wildlife conservation while providing a fun day out for visitors of all ages.",
+            "image": "images/discover/zoologico-de-culiacan.jpg"
+        },
+        {
+            "name": "Estadio Tomateros",
+            "address": "Avenida Jesús Andrade S/N, Miguel Alemán, 80200 Culiacán, Sinaloa",
+            "description": "Home to los Tomateros de Culiacán, this modern stadium can accommodate over 20,000 spectators. It hosts exciting sporting events and serves as a venue for other large-scale entertainment activities.",
+            "image": "images/discover/estadio-los-tomateros.jpg"
+        },
+        {
+            "name": "Parroquia de Nuestra Señora de Guadalupe",
+            "address": "Humaya, Guadalupe, 80220 Culiacán Rosales, Sinaloa",
+            "description": "This is a church that is dedicated to the Virgin of Guadalupe. It is a beautiful church that is worth visiting.",
+            "image": "images/discover/lomita.jpg"
+        }
+    ]
+} 

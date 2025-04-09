@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Culiacan - Chamber of Commerce</title>
+    <meta name="description" content="Discover Culiacan's attractions, businesses, and landmarks through the Chamber of Commerce guide">
+    <meta name="author" content="Erik German">
+    
+    <meta property="og:title" content="Discover Culiacan - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://eriko13.github.io/wdd231/chamber/images/culiacan_escudo-logo.png">
+    <meta property="og:url" content="https://eriko13.github.io/wdd231/chamber/discover.html">
+    
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/culiacan_escudo-logo.png" alt="Culiacan Chamber of Commerce Logo">
+            <div class="title-container">
+                <h1>Culiacan</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="directory.html">DIRECTORY</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="discover.html" class="active">DISCOVER</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="discover">
+        <h2>Discover Culiacan</h2>
+        
+        <div class="visitor-message" id="visitor-message">
+        </div>
+        
+        <div class="discover-grid">
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/culiacan_escudo-logo.png" alt="Culiacan Chamber of Commerce Logo">
+                <div class="footer-title">
+                    <h3>Culiacan Chamber of Commerce</h3>
+                    <p>Calle 10 de Mayo</p>
+                    <p>Culiacan, Mexico 80000</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@culiacancc.org</p>
+                <p>(667) 712-0000</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p>&copy; <span id="currentyear"></span> Culiacan Chamber of Commerce</p>
+            <p>WDD231 Class Project</p>
+            <p>Erik German</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html> 

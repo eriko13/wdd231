@@ -1,0 +1,158 @@
+/* Discover Page Styles */
+
+/* Visitor Message Box */
+.visitor-message {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Discover Grid Container */
+.discover-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* Card Styles */
+.discover-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.discover-card h2 {
+    color: #333;
+    padding: 1rem;
+    margin: 0;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Image hover effect - not applied on mobile */
+@media screen and (min-width: 641px) {
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
+
+.discover-card address {
+    padding: 0.75rem 1rem;
+    font-style: normal;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+.discover-card p {
+    padding: 0 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.discover-card .card-button {
+    display: block;
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.discover-card .card-button:hover {
+    background-color: #005f8f;
+}
+
+/* Small Screen Grid Layout (320px to 640px) */
+@media screen and (max-width: 640px) {
+    .discover-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+    
+    .discover-card:nth-child(1) { grid-area: card1; }
+    .discover-card:nth-child(2) { grid-area: card2; }
+    .discover-card:nth-child(3) { grid-area: card3; }
+    .discover-card:nth-child(4) { grid-area: card4; }
+    .discover-card:nth-child(5) { grid-area: card5; }
+    .discover-card:nth-child(6) { grid-area: card6; }
+    .discover-card:nth-child(7) { grid-area: card7; }
+    .discover-card:nth-child(8) { grid-area: card8; }
+}
+
+/* Medium Screen Grid Layout (641px to 1024px) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+    
+    .discover-card:nth-child(1) { grid-area: card1; }
+    .discover-card:nth-child(2) { grid-area: card2; }
+    .discover-card:nth-child(3) { grid-area: card3; }
+    .discover-card:nth-child(4) { grid-area: card4; }
+    .discover-card:nth-child(5) { grid-area: card5; }
+    .discover-card:nth-child(6) { grid-area: card6; }
+    .discover-card:nth-child(7) { grid-area: card7; }
+    .discover-card:nth-child(8) { grid-area: card8; }
+}
+
+/* Large Screen Grid Layout (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+    
+    .discover-card:nth-child(1) { grid-area: card1; }
+    .discover-card:nth-child(2) { grid-area: card2; }
+    .discover-card:nth-child(3) { grid-area: card3; }
+    .discover-card:nth-child(4) { grid-area: card4; }
+    .discover-card:nth-child(5) { grid-area: card5; }
+    .discover-card:nth-child(6) { grid-area: card6; }
+    .discover-card:nth-child(7) { grid-area: card7; }
+    .discover-card:nth-child(8) { grid-area: card8; }
+} 
