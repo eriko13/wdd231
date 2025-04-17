@@ -1,0 +1,300 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Caveat:wght@400;600&display=swap');
+
+/* Variables */
+:root {
+    /* Colors */
+    --primary-color: #4A6D7C;
+    --secondary-color: #F9B872;
+    --background-color: #F8F4E3;
+    --text-color: #2B2B2B;
+    --light-color: #ffffff;
+    --border-color: #ddd;
+
+    /* Fonts */
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --accent-font: 'Caveat', cursive;
+
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    padding: 0 var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, main, footer {
+    padding: var(--spacing-lg) 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-left: 5px solid var(--secondary-color);
+    padding-left: var(--spacing-md);
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+p, ul, ol {
+    margin-bottom: var(--spacing-md);
+}
+
+section {
+    margin-bottom: var(--spacing-xl);
+    background-color: var(--light-color);
+    padding: var(--spacing-lg);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Schema Section */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.color-sample {
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    color: white;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.color-sample::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.color-sample h3 {
+    margin-bottom: var(--spacing-sm);
+    color: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.color-sample p:first-of-type {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: var(--heading-font);
+}
+
+.color-sample p {
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+    color: var(--text-color); /* Better contrast */
+}
+
+.background-color {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.text-color {
+    background-color: var(--text-color);
+}
+
+.text-color h3, .text-color p:last-of-type {
+    color: var(--background-color);
+}
+
+.text-color p:first-of-type {
+    color: #8cc8f0; /* Light blue for better visibility on dark background */
+}
+
+/* Typography Section */
+.font-sample {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.heading-font .example {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.body-font .example {
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.accent-font .example {
+    font-family: var(--accent-font);
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+
+/* Wireframes Section */
+.wireframe-intro {
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.wireframe-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.wireframe {
+    text-align: center;
+}
+
+.wireframe h3 {
+    margin-bottom: var(--spacing-md);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.wireframe-preview {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: var(--spacing-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: var(--light-color);
+    object-fit: cover;
+    display: block;
+}
+
+.view-prompt {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: var(--spacing-sm);
+    transition: background-color 0.3s;
+}
+
+.wireframe-description {
+    background-color: #f9f9f9;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: var(--spacing-md);
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.wireframe-description ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.wireframe-description li {
+    margin-bottom: 0.25rem;
+}
+
+/* Mobile Wireframe Preview */
+.wireframe-preview.mobile {
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Desktop Wireframe Preview */
+.wireframe-preview.desktop {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: var(--spacing-lg);
+    color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0 var(--spacing-lg);
+    }
+    
+    .wireframe-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .wireframe {
+        flex: 1;
+    }
+    
+    .wireframe-description {
+        max-width: 90%;
+    }
+} 
